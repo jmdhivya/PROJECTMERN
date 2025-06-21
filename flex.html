@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flag/title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .child, .center, .bottom {
+      width: 400px;
+      height: 100px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .child {
+      background-color: rgb(225, 103, 27);
+    }
+
+    .center {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom {
+      background-color: green;
+    }
+
+    .center img {
+      height: 80px; /* Adjust for padding */
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child"></div>
+    <div class="center">
+      <img src="chakra.jpg" alt="chakra image">
+    </div>
+    <div class="bottom"></div>
+  </div>
+</body>
+</html>
